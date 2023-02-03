@@ -1,0 +1,9 @@
+﻿Products,Categories,Users,Orders,Reviews
+Title,Category,Name,User ID,UserID
+Author,Description,Email,Order date,BookID
+ISBN,,Hashed Password,Order total,Review text
+Description,,Billing Address,Order status(pending shipped delivered),Star Rating
+Publication Date,,Shipping Address,Items ordered,Review Date
+No. of Pages,,Phone No.,,
+Image,,,,
+Price,,,,
