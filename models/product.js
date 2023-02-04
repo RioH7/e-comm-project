@@ -29,7 +29,6 @@ const productSchema = new mongoose.Schema({
     category: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Category',
-            enum: ['philosophy', 'business', 'self-improvement', 'biography', 'music', 'chess', 'indoor games', 'hobbies', 'psychology', 'health', 'coffee', 'home', 'cultural studies', 'fiction', 'magic', 'childrens books']
     }],
     pages: {
         type: Number,
