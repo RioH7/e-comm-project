@@ -9,3 +9,7 @@ for (let i = 0; i < 25; i++) {
         password: faker.internet.password()
     });
 };
+
+User.create(userArray)
+    .then(() => console.log("data added"))
+    .catch(err => console.log(err));

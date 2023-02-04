@@ -92,3 +92,7 @@ const productArray = [
         description: "MANIFEST is the essential guide for anyone and everyone wanting to feel more empowered in their lives. Self-development coach and 'Queen of Manifesting' Roxie Nafousi will show you how in just seven simple steps you can understand the true art of manifestation and learn how to create the life you have always dreamed of."
     }
 ];
+
+Product.create(productArray)
+    .then(() => console.log("data added"))
+    .catch(err => console.log(err));

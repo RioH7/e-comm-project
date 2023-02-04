@@ -11,3 +11,7 @@ for(let i = 0; i < 25; i++) {
         country: faker.address.country()
     });
 };
+
+Address.create(addressArray)
+    .then(() => console.log("data added"))
+    .catch(err => console.log(err));

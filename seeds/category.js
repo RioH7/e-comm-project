@@ -10,4 +10,4 @@ for (let i = 0; i < 10; i++) {
 
 Category.create(categorySeedData)
   .then(() => console.log("Category seed data added successfully."))
-  .catch((err) => console.error("Error adding category seed data: ", err));
+  .catch(err => console.log(err));
