@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker/locale/en';
-import Review from '../models/review';
-import User from '../models/user';
-import Product from '../models/product';
+import Review from '../models/review.js';
+import User from '../models/user.js';
+import Product from '../models/product.js';
 
 const generateData = async() => {
     const users = await User.find();

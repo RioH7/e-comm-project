@@ -1,8 +1,8 @@
 import { faker } from '@faker-js/faker/locale/en'
-import Order from '../models/order';
-import User from '../models/user';
-import Product from '../models/product';
-import Address from '../models/address';
+import Order from '../models/order.js';
+import User from '../models/user.js';
+import Product from '../models/product.js';
+import Address from '../models/address.js';
 
 const orderArray = [];
 for(let i = 0; i < 50; i++) {

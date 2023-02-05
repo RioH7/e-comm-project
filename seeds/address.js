@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker/locale/en';
-import Address from '../models/address';
+import Address from '../models/address.js';
 
 const addressArray = [];
 for(let i = 0; i < 25; i++) {

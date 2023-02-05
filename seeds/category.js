@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker/locale/en';
-import Category from '../models/category';
+import Category from '../models/category.js';
 
 const categorySeedData = [];
 for (let i = 0; i < 10; i++) {

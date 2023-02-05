@@ -2,17 +2,18 @@
   "name": "chatgptproject",
   "version": "1.0.0",
   "description": "For this project I'm going to be using the MEVN stack.",
-  "main": "server.js",
+  "main": "./config/database.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "devStart": "nodemon server.js"
+    "start": "node ./config/database.js",
+    "devStart": "nodemon ./config/database.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.9.0",
     "vue": "^3.2.45"

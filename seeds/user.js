@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker/locale/en';
-import User from '../models/user';
+import User from '../models/user.js';
 
 const userArray = [];
 for (let i = 0; i < 25; i++) {

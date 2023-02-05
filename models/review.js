@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import User from './user';
-import Product from './product';
+import User from './user.js';
+import Product from './product.js';
 
 const generateData = async() => {
     const users = await User.find();
