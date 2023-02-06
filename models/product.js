@@ -26,10 +26,6 @@ const productSchema = new mongoose.Schema({
       min: [0, 'Price must be at least 0']
     },
     image: String,
-    category: [{
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Category',
-    }],
     pages: {
         type: Number,
         min: [0, 'Pages must be at least 0']
@@ -41,4 +37,4 @@ productSchema.index({ title: 'text' });
 
 const Product = mongoose.model('Product', productSchema);
 
-export default Product ;
+export default Product;

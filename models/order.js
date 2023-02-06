@@ -4,17 +4,19 @@ const ordersSchema = new mongoose.Schema({
     userID: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
-        required: [true, 'User ID is required']
     },
-    items: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Product',
-        required: [true, 'Product ID is required']
-    },
+    items: [{
+        productID: {
+            type: mongoose.Schema.Types.ObjectID,
+            ref: 'Product'
+        },
+        name: String,
+        price: Number,
+        quantity: Number
+    }],
     address: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Address',
-        required: [true, 'Address is required']
     },
     orderDate: {
         type: Date,
@@ -23,7 +25,6 @@ const ordersSchema = new mongoose.Schema({
     },
     total: {
         type: Number,
-        required: [true, 'Total is required']
     }
 });
 

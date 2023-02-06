@@ -12,7 +12,6 @@ const addressSchema = new mongoose.Schema({
     postcode: {
         type: String,
         required: true,
-        maxlength: [8, 'Postcode must be at maximum 8 characters'],
     },
     city: {
         type: String,

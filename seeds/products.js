@@ -1,5 +1,3 @@
-import Product from '../models/product.js';
-
 const productArray = [
     {
         title: 'The Boy, The Mole, The Fox and The Horse',
@@ -93,6 +91,4 @@ const productArray = [
     }
 ];
 
-Product.create(productArray)
-    .then(() => console.log("data added"))
-    .catch(err => console.log(err));
+export default productArray;
