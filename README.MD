@@ -2,7 +2,7 @@
 For this project I'm going to be using the MEVN stack.
 
 ## Dev Environment
-To set up the development environment, I installed Node.js, npm, MongoDB, and mongoose and then set up a database for my project.
+To set up the development environment, I installed Node.js, npm, MongoDB, jsonwebtoken, and mongoose and then set up a database for my project.
 I then initialised my project and installed Express and Vue.
 I followed this by setting up my express server and configuring it to my DB in server.js
 I then set up my vue application in main.js and made it make API requests to the Express server 
