@@ -18,8 +18,10 @@ import reviews from '../seeds/reviews.js';
 import Order from '../models/Order.js';
 import orders from '../seeds/orders.js';
 
+import routes from './routes.js';
 
 const app = express();
+app.use(routes);
 const uri= process.env.DB_URI;
 
 const seedData = async() => {
