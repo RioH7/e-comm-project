@@ -16,7 +16,7 @@ const generateData = async() => {
         let total = 0;
         const orderItems = [];
         for(let j = 0; j < Math.floor(Math.random() * 3 + 1); j++){
-            let product = products[Math.floor(Math.random() % products.length)];
+            const product = products[Math.floor(Math.random() % products.length)];
             orderItems.push({
                 productID: product._id,
                 name: product.name,
