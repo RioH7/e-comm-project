@@ -1,9 +1,15 @@
 import express from 'express';
+
 import { getProductById, getProducts, createProduct, deleteProduct, updateProduct } from '../controllers/product.js';
+
 import { getAddressById, getAddresses, createAddress, deleteAddress, updateAddress } from '../controllers/address.js';
+
 import { getUsers, getUserById, deleteUser, updateUser, createUser } from '../controllers/user.js';
+
 import { getOrders, getOrderById, createOrder, cancelOrder } from '../controllers/order.js';
+
 import { getReviews, getReviewById, createReview, updateReview, deleteReview } from '../controllers/review.js';
+
 const app = express();
 
 app.get('/products', getProducts);
@@ -18,9 +24,9 @@ app.post('/addresses', createAddress);
 app.put('address/:id', updateAddress);
 app.delete('address/:id', deleteAddress);
 
-app.get('/users', getUsers);
+app.post('/login', getUsers);
 app.get('user/:id', getUserById);
-app.post('/user', createUser);
+app.post('/register', createUser);
 app.put('user/:id', updateUser);
 app.delete('user/:id', deleteUser);
 
