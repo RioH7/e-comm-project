@@ -35,10 +35,10 @@ app.get('/order:/id', getOrderById);
 app.post('order', createOrder);
 app.delete('/order/:id', cancelOrder);
 
-app.get('/users', getReviews);
-app.get('user/:id', getReviewById);
-app.post('/user', createReview);
-app.put('user/:id', updateReview);
-app.delete('user/:id', deleteReview);
+app.get('/reviews', getReviews);
+app.get('review/:id', getReviewById);
+app.post('/review', createReview);
+app.put('review/:id', updateReview);
+app.delete('review/:id', deleteReview);
 
 export default app;
