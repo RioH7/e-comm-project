@@ -43,7 +43,7 @@ const updateProduct = async(req, res) => {
         const product = await Product.findByIdAndUpdate(
             req.params.id,
             {
-                title: req.body.name,
+                title: req.body.title,
                 author: req.body,author,
                 isbn: req.body.isbn,
                 description: req.body.description,
