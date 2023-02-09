@@ -1,4 +1,4 @@
-const Review = require('../models/review');
+import Review from '../models/Review.js'
 
 const getReviews = async (req, res) => {
   try {
