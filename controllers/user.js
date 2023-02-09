@@ -44,6 +44,9 @@ const createUser = async(req, res) => {
         const savedUser = await User.save();
         res.send({ id: savedUser._id });
     } catch(error) {
+        if(error.code === 11000) {
+            return res.status(400).send({ error: 'Email already in use' });
+        }
         res.status(400).send(error);
     }
 }
