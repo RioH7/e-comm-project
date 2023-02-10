@@ -1,14 +1,15 @@
 <template>
-    <RegisterComp />
+    <NavBar />
+    <router-view />
 </template>
 
 <script>
-import RegisterComp from './components/RegisterComp.vue';
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
-    RegisterComp
+    NavBar,
   }
 }
 </script>
