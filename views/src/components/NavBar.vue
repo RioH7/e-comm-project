@@ -20,20 +20,5 @@ export default {
 }
 </script>
 
-<style>
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin-right: 1rem;
-}
-
-.nav-link {
-  color: #333;
-  text-decoration: none;
-}
+<style lang="sass" src="./styles/navbar.sass">
 </style>
