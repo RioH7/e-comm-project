@@ -32,4 +32,4 @@ export default {
     </div>
 </template>
 
-<style lang="sass" src="./styles/register.sass"></style>
+<style lang="sass" src="./styles/register.sass" scoped></style>

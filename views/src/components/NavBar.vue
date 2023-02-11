@@ -10,6 +10,9 @@
             <li class="nav-item">
                 <router-link to="/register" class="nav-link">Sign Up</router-link>
             </li>
+            <li class="nav-item">
+                <router-link to="/products" class="nav-link">Products</router-link>
+            </li>
         </ul>
     </nav>
 </template>
@@ -20,5 +23,5 @@ export default {
 }
 </script>
 
-<style lang="sass" src="./styles/navbar.sass">
+<style lang="sass" src="./styles/navbar.sass" scoped>
 </style>
