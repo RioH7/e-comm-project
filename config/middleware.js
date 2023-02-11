@@ -1,8 +1,17 @@
 import compression from 'compression';
-import app from './routes.js'
 import cors from 'cors';
+import app from './routes.js'
 import bodyParser from 'body-parser';
 import helmet from 'helmet';
+
+const cors = (req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+};
+
+// Use the CORS middleware in your Express app
+app.use(cors);
 
 const compressionMiddleware = compression();
 
@@ -19,12 +28,4 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(helmet());
-
-app.use(
-    cors({
-        origin: 'http://127.0.0.1:5500/public/index.html',
-        methods: ['GET', 'POST', 'PUT', 'DELETE']
-    })
-)
-
 // Authentication Middleware
